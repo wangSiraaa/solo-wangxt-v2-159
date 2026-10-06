@@ -1,0 +1,61 @@
+:root {
+  --bg: #14161a;
+  --panel: #1e2128;
+  --cell: #2a2e38;
+  --cell-on: #3a4152;
+  --text: #e6e8ec;
+  --dim: #8a8f9c;
+  --accent: #ffb454;
+  --accent2: #5fd0a5;
+  --danger: #ff6b6b;
+  --btn: #2a2e38;
+  --btn-hover: #343947;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', system-ui, sans-serif;
+}
+
+button {
+  background: var(--btn);
+  color: var(--text);
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+button:hover {
+  background: var(--btn-hover);
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+input,
+select {
+  background: var(--cell);
+  color: var(--text);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.25rem 0.4rem;
+  font-size: 0.85rem;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+input[type='range'] {
+  padding: 0;
+}
